@@ -1,0 +1,101 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;500;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;0,800;1,300;1,400;1,600;1,700;1,800&display=swap');
+
+// $main-font: 'Ubuntu', sans-serif;
+$main-font: 'Open Sans', sans-serif;
+
+* {
+    box-sizing: border-box;
+}    
+
+body {
+    margin: 0;
+    background: no-repeat center center fixed; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    color: white;
+    font-family: $main-font;
+    text-shadow: 0px 0px 20px #242424;
+    position: relative;
+}
+
+main {
+    padding: 15px;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+div.top {
+    display: flex;
+    justify-content: space-between;
+}
+
+h1.time {
+    text-align: center;
+    font-size: 6rem;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+}
+
+div#crypto {
+    font-size: 1.3rem;
+    // border:1px solid red;
+    padding: 25px 35px;
+    background-color: rgba(41, 40, 40, 0.6);
+    border-radius: 1rem;
+    box-shadow:
+    0 2.8px 2.2px rgba(0, 0, 0, 0.034),
+    0 6.7px 5.3px rgba(0, 0, 0, 0.048),
+    0 12.5px 10px rgba(0, 0, 0, 0.06),
+    0 22.3px 17.9px rgba(0, 0, 0, 0.072),
+    0 41.8px 33.4px rgba(0, 0, 0, 0.086),
+    0 100px 80px rgba(0, 0, 0, 0.12)
+}
+
+div#crypto > p {
+    margin: 5px 0;
+    text-align: center;
+}
+
+div#crypto-top {
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+div#crypto-top > span {
+    margin-left: 10px;
+}
+
+div#weather {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+    align-self: flex-start;
+    margin-top: -20px;
+}
+
+div#weather > img {
+    width: 90px;
+}
+
+p.weather-city {
+    width: 100%;
+    text-align: right;
+    margin: 0;
+    margin-top: -10px;
+    font-size: 1.1rem;
+}
+
+p.weather-temp {
+    margin: 0;
+    font-size: 2rem;
+    margin-left: -10px;
+}
